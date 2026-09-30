@@ -225,7 +225,7 @@
       "title": "Why Does Microwave Minute Feel Twice as Long as Regular Minute?",
       "date": "August 10, 2026",
       "readTime": "6 min read",
-      "icon": "⏱️",
+      "icon": "⏱️️",
       "paragraphs": [
         "Standard physics states time is linear and constant. Anyone reheating leftover soup knows this is a lie.",
         "Sixty seconds on a microwave clock actually lasts approximately 4.5 standard human minutes.",
@@ -470,6 +470,425 @@
         "Thank you for reading my extremely real thoughts."
       ],
       "buttonText": "♥ ULTIMATE TRUTH"
+    },
+    {
+      "id": 34,
+      "category": "Snacks",
+      "title": "Why Are Chip Bags 70% Nitrogen Gas?",
+      "date": "June 2, 2026",
+      "readTime": "5 min read",
+      "icon": "🥔",
+      "paragraphs": [
+        "I bought a bag of barbecue potato chips expecting a bounty of potato goodness.",
+        "Instead, I purchased a pressurized bag of pure atmosphere with four chips resting at the bottom.",
+        "I am basically paying for imported air at this point."
+      ],
+      "buttonText": "♥ AIRBORNE"
+    },
+    {
+      "id": 35,
+      "category": "Nonsense",
+      "title": "I Tried Waving at a Cat and It Judged My Entire Ancestry",
+      "date": "May 29, 2026",
+      "readTime": "3 min read",
+      "icon": "🐈",
+      "paragraphs": [
+        "A stray tabby was sitting on a porch rail. I gave it a friendly wrist wiggle.",
+        "The cat slowly blinked, tilted its head, and sighed with profound disappointment.",
+        "I apologized aloud and walked away feeling ethically defeated."
+      ],
+      "buttonText": "♥ UNWORTHY"
+    },
+    {
+      "id": 36,
+      "category": "Science-ish",
+      "title": "Can Ice Cubes Float Upside Down?",
+      "date": "May 25, 2026",
+      "readTime": "6 min read",
+      "icon": "🧊",
+      "paragraphs": [
+        "I spent 40 minutes flipping an ice cube in my cup of water to see if it would stay inverted.",
+        "Every time I flipped it, the cube rotated right back to its original orientation.",
+        "Physics is stubborn and lacks imagination."
+      ],
+      "buttonText": "♥ REBELLIOUS ICE"
+    },
+    {
+      "id": 37,
+      "category": "Mysteries",
+      "title": "The Mystery of the Car Whistling at 42 MPH",
+      "date": "May 21, 2026",
+      "readTime": "4 min read",
+      "icon": "🚗",
+      "paragraphs": [
+        "My hatchback is dead silent at 40 MPH. At 45 MPH, it is peaceful.",
+        "At exactly 42 MPH, a faint high-pitched flute melody echoes from the passenger mirror.",
+        "I think my side mirror wants to join an orchestra."
+      ],
+      "buttonText": "♥ HARMONIOUS"
+    },
+    {
+      "id": 38,
+      "category": "Socks",
+      "title": "Wearing Mis-Matched Socks Enhances Creativity by 12%",
+      "date": "May 17, 2026",
+      "readTime": "7 min read",
+      "icon": "🧦",
+      "paragraphs": [
+        "Left foot: green polka dots. Right foot: yellow neon stripes.",
+        "By refusing to align my ankles with societal norms, I solved three crossword puzzles in record time.",
+        "Symmetrical feet are holding back human innovation."
+      ],
+      "buttonText": "♥ REBEL FEET"
+    },
+    {
+      "id": 39,
+      "category": "Very Serious",
+      "title": "Why Staring at a Ceilings Fan Solves All Problems",
+      "date": "May 13, 2026",
+      "readTime": "8 min read",
+      "icon": "🌀",
+      "paragraphs": [
+        "When life gets complex, lie on the floor and watch the ceiling fan rotate clockwise.",
+        "Whir. Whir. Whir.",
+        "By rotation 400, your mortgage and overdue emails no longer matter. Only spin."
+      ],
+      "buttonText": "♥ HYPNOTIC"
+    },
+    {
+      "id": 40,
+      "category": "Pigeons",
+      "title": "Pigeon Holds Eye Contact for 12 Seconds in Park",
+      "date": "May 9, 2026",
+      "readTime": "3 min read",
+      "icon": "🐦",
+      "paragraphs": [
+        "I sat on a wooden bench eating a pretzel. A grey pigeon landed 6 inches away.",
+        "We locked eyes for twelve unbroken seconds. I offered a breadcrumb. It rejected the breadcrumb.",
+        "It was not seeking food. It was seeking my soul."
+      ],
+      "buttonText": "♥ INTIMIDATING"
+    },
+    {
+      "id": 41,
+      "category": "Snacks",
+      "title": "The Exact Ratio of Butter to Popcorn Core",
+      "date": "May 5, 2026",
+      "readTime": "6 min read",
+      "icon": "🍿",
+      "paragraphs": [
+        "Too little butter leads to dry, styrofoam-flavored cardboard bits.",
+        "Too much butter creates a soggy wetland of melted lipid soup at the bottom of the bowl.",
+        "Achieving the golden middle path requires mathematical precision and a willingness to stain your jeans."
+      ],
+      "buttonText": "♥ BUTTERY"
+    },
+    {
+      "id": 42,
+      "category": "Nonsense",
+      "title": "I Tried High-Fiving the Wind",
+      "date": "May 1, 2026",
+      "readTime": "2 min read",
+      "icon": "💨",
+      "paragraphs": [
+        "A strong gust blew through the alleyway. I raised my hand high and slapped forward.",
+        "I missed.",
+        "The wind carried on without offering an apology."
+      ],
+      "buttonText": "♥ LEFT HANGING"
+    },
+    {
+      "id": 43,
+      "category": "Science-ish",
+      "title": "Is Yawning Contagious Across Species?",
+      "date": "April 27, 2026",
+      "readTime": "5 min read",
+      "icon": "🥱",
+      "paragraphs": [
+        "I yawned loudly in front of my goldfish tank.",
+        "The goldfish opened its mouth wide three seconds later.",
+        "Either we share a profound biological bond, or it was just expecting fish flakes."
+      ],
+      "buttonText": "♥ CONTAGIOUS"
+    },
+    {
+      "id": 44,
+      "category": "Mysteries",
+      "title": "The Pencil That Rolled Under the Desk and Evaporated",
+      "date": "April 23, 2026",
+      "readTime": "4 min read",
+      "icon": "✏️",
+      "paragraphs": [
+        "A yellow #2 pencil slipped off my desk. I heard it hit the floorboards.",
+        "I got down on my hands and knees with a flashlight. Clear line of sight beneath the desk.",
+        "Nothing. The desk sits against a solid wall. The pencil has transcended matter."
+      ],
+      "buttonText": "♥ VANISHED"
+    },
+    {
+      "id": 45,
+      "category": "Very Serious",
+      "title": "Why Does the Shampoo Bottle Always Fall Over in the Shower?",
+      "date": "April 19, 2026",
+      "readTime": "6 min read",
+      "icon": "🧴",
+      "paragraphs": [
+        "The ledge is flat. The bottle has a sturdy wide bottom.",
+        "Yet the moment you close your eyes to rinse off soap, *CLATTER*.",
+        "It strikes the tub like a depth charge. Shower bottles are sentient and hostile."
+      ],
+      "buttonText": "♥ JUMPED"
+    },
+    {
+      "id": 46,
+      "category": "Socks",
+      "title": "An Ode to the Sock With the Hole in the Heel",
+      "date": "April 15, 2026",
+      "readTime": "5 min read",
+      "icon": "🧦",
+      "paragraphs": [
+        "I should throw it away. I know I should.",
+        "But it is my softest sock. The hole just provides ventilation.",
+        "We have been through too much together for the trash can."
+      ],
+      "buttonText": "♥ SENTIMENTAL"
+    },
+    {
+      "id": 47,
+      "category": "Pigeons",
+      "title": "Do Pigeons Have Real Estate Markets?",
+      "date": "April 11, 2026",
+      "readTime": "7 min read",
+      "icon": "🏙️",
+      "paragraphs": [
+        "I noticed two pigeons fighting over a window ledge with a view of the bakery dumpster.",
+        "The ledge gets optimal morning sun and high foot traffic for dropped croissant crumbs.",
+        "That window ledge is prime downtown real estate."
+      ],
+      "buttonText": "♥ LOCATION"
+    },
+    {
+      "id": 48,
+      "category": "Snacks",
+      "title": "Eating Cereal Out of a Mug Changes Everything",
+      "date": "April 7, 2026",
+      "readTime": "4 min read",
+      "icon": "☕",
+      "paragraphs": [
+        "Bowls are shallow and expose too much cereal surface area to milk prematurely, causing rapid sogginess.",
+        "A tall ceramic mug maintains vertical crunch architecture.",
+        "Plus, you can drink the milk directly from the handle side."
+      ],
+      "buttonText": "♥ GENIUS"
+    },
+    {
+      "id": 49,
+      "category": "Nonsense",
+      "title": "I Named My Toaster 'Gerald' and Now We Agree on Toast",
+      "date": "April 3, 2026",
+      "readTime": "3 min read",
+      "icon": "🍞",
+      "paragraphs": [
+        "Gerald burned my sourdough twice last week.",
+        "I sat Gerald down, patted his chrome casing, and introduced myself properly.",
+        "Ever since, golden brown perfection every single morning. Respect your appliances."
+      ],
+      "buttonText": "♥ HI GERALD"
+    },
+    {
+      "id": 50,
+      "category": "Science-ish",
+      "title": "If You Whisper to a Wall, Does It Keep the Secret?",
+      "date": "March 30, 2026",
+      "readTime": "6 min read",
+      "icon": "🧱",
+      "paragraphs": [
+        "Drywall is made of gypsum and paper.",
+        "Gypsum is a mineral. Minerals do not have mouths, wifi connections, or social media accounts.",
+        "Therefore, drywall is the most trustworthy confidant in your apartment."
+      ],
+      "buttonText": "♥ TRUSTWORTHY"
+    },
+    {
+      "id": 51,
+      "category": "Mysteries",
+      "title": "The Alarm Clock That Rings at 3:14 AM Every Tuesday",
+      "date": "March 26, 2026",
+      "readTime": "8 min read",
+      "icon": "⏰",
+      "paragraphs": [
+        "I don't own a digital alarm clock.",
+        "My phone is set to silent.",
+        "Yet at 3:14 AM every Tuesday, a faint electronic beep rings twice from somewhere near the closet."
+      ],
+      "buttonText": "♥ SPOOKY"
+    },
+    {
+      "id": 52,
+      "category": "Very Serious",
+      "title": "The Art of Holding a Hot Cup of Coffee With Both Hands",
+      "date": "March 22, 2026",
+      "readTime": "5 min read",
+      "icon": "☕",
+      "paragraphs": [
+        "Cupping a warm ceramic mug in two hands while looking blankly out a rainy window increases contemplative aesthetic by 400%.",
+        "It doesn't make the coffee taste better, but it makes you feel like the main character of an indie film."
+      ],
+      "buttonText": "♥ MAIN CHARACTER"
+    },
+    {
+      "id": 53,
+      "category": "Socks",
+      "title": "Can Socks Be Worn on Hands in an Emergency?",
+      "date": "March 18, 2026",
+      "readTime": "4 min read",
+      "icon": "🧤",
+      "paragraphs": [
+        "It was 20 degrees outside and I lost my gloves.",
+        "I slipped two clean wool socks over my hands.",
+        "I looked like a puppet theater troupe on my way to the grocery store, but my fingers stayed warm."
+      ],
+      "buttonText": "♥ RESOURCEFUL"
+    },
+    {
+      "id": 54,
+      "category": "Pigeons",
+      "title": "A Pigeon Stared at My Phone Screen While I Scrolled",
+      "date": "March 14, 2026",
+      "readTime": "5 min read",
+      "icon": "📱",
+      "paragraphs": [
+        "I was sitting on a subway bench scrolling through short videos.",
+        "A pigeon perched on the back of the bench was looking directly at the glowing screen.",
+        "It seemed particularly interested in a clip of someone making garlic bread."
+      ],
+      "buttonText": "♥ CULTURALLY AWARE"
+    },
+    {
+      "id": 55,
+      "category": "Snacks",
+      "title": "The Strategic Ordering of Gummy Bears",
+      "date": "March 10, 2026",
+      "readTime": "6 min read",
+      "icon": "🧸",
+      "paragraphs": [
+        "You cannot eat gummy bears at random.",
+        "Yellow (lemon) must go first to eliminate weak flavors.",
+        "Red (raspberry/strawberry) and Green (apple) must be saved for the grand finale."
+      ],
+      "buttonText": "♥ STRATEGIC"
+    },
+    {
+      "id": 56,
+      "category": "Nonsense",
+      "title": "I Tried to Compliment a Tree and a Leaf Fell On Me",
+      "date": "March 6, 2026",
+      "readTime": "3 min read",
+      "icon": "🍁",
+      "paragraphs": [
+        "I patted an oak trunk and whispered, 'You have excellent bark structure.'",
+        "Immediately, a crisp brown leaf drifted down and landed directly on my nose.",
+        "I accept this as a formal tip."
+      ],
+      "buttonText": "♥ TIPPED"
+    },
+    {
+      "id": 57,
+      "category": "Science-ish",
+      "title": "Why Does Boiling Water Make Noise Before Boiling?",
+      "date": "March 2, 2026",
+      "readTime": "7 min read",
+      "icon": "🫖",
+      "paragraphs": [
+        "The pot sings a low rumble, then gets silent right before it starts bubbling violently.",
+        "The water is building dramatic suspense.",
+        "Culinary thermodynamics is just theater in disguise."
+      ],
+      "buttonText": "♥ DRAMATIC"
+    },
+    {
+      "id": 58,
+      "category": "Mysteries",
+      "title": "Who Leaves Half-Eaten Apples on Park Benches?",
+      "date": "February 26, 2026",
+      "readTime": "4 min read",
+      "icon": "🍎",
+      "paragraphs": [
+        "Across three different parks in town, I have spotted single Gala apples with exactly three bites taken out.",
+        "Is this a single eccentric individual, or an underground secret society code?",
+        "I am monitoring the bench network."
+      ],
+      "buttonText": "♥ APPLE CODE"
+    },
+    {
+      "id": 59,
+      "category": "Very Serious",
+      "title": "The Sadness of a Deflated Birthday Balloon",
+      "date": "February 22, 2026",
+      "readTime": "6 min read",
+      "icon": "🎈",
+      "paragraphs": [
+        "Three weeks after the party, the silver foil number '4' floats 2 inches above the carpet, wrinkled and weary.",
+        "It hovers slowly across the hallway like a ghostly reminder of joy past.",
+        "I cannot bring myself to pop it."
+      ],
+      "buttonText": "♥ POIGNANT"
+    },
+    {
+      "id": 60,
+      "category": "Socks",
+      "title": "Static Electricity Has Made My Socks Magnetic",
+      "date": "February 18, 2026",
+      "readTime": "3 min read",
+      "icon": "⚡",
+      "paragraphs": [
+        "I pulled my fleece socks out of the dryer.",
+        "They immediately stuck to the refrigerator door, my dog's back, and my sweater.",
+        "I am currently 40% static charge by weight."
+      ],
+      "buttonText": "♥ ELECTRIC"
+    },
+    {
+      "id": 61,
+      "category": "Pigeons",
+      "title": "Pigeon Nods to Beat of Street Musician's Drum",
+      "date": "February 14, 2026",
+      "readTime": "5 min read",
+      "icon": "🥁",
+      "paragraphs": [
+        "A bucket drummer was playing a 4/4 rhythm in the square.",
+        "A pigeon on the curb was bobbing its head in perfect 120 BPM sync.",
+        "It had better timing than most human bassists I know."
+      ],
+      "buttonText": "♥ IN THE GROOVE"
+    },
+    {
+      "id": 62,
+      "category": "Snacks",
+      "title": "Crush Test: Saltines vs. Ritz Crackers",
+      "date": "February 10, 2026",
+      "readTime": "6 min read",
+      "icon": "🥨",
+      "paragraphs": [
+        "Saltines shatter into sharp geometric shards under pressure.",
+        "Ritz crackers crumble into buttery dust with minimal resistance.",
+        "This architectural analysis is crucial for soup topping strategy."
+      ],
+      "buttonText": "♥ CRUNCH DATA"
+    },
+    {
+      "id": 63,
+      "category": "Nonsense",
+      "title": "I Accidentally Wrote a 63-Post Blog About Nothing",
+      "date": "February 6, 2026",
+      "readTime": "12 min read",
+      "icon": "📜",
+      "paragraphs": [
+        "What started with a pigeon walk has escalated into 63 distinct manifestos on socks, snacks, spoons, and sky potatoes.",
+        "If you read all 63, you deserve a medal carved out of a dry cracker.",
+        "Thank you for visiting the edges of my imagination."
+      ],
+      "buttonText": "♥ COMPLETE MASTERPIECE"
     }
   ]
 }
