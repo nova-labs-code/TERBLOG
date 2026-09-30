@@ -292,6 +292,21 @@ input {
   font-size: 12px;
 }
 
+/* LOADING & ERROR STATES */
+.loading-state, .error-state {
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+  border: 3px solid var(--ink);
+  background: white;
+  box-shadow: 6px 6px var(--ink);
+}
+
+.error-state {
+  background: var(--pink);
+}
+
 /* FOOTER */
 
 footer {
@@ -404,404 +419,9 @@ footer strong {
 <div class="layout">
 
 <main id="posts">
-
-  <!-- BLOG 1 -->
-  <article class="post">
-    <span class="category">Investigation</span>
-    <h2>I Followed a Pigeon for 47 Minutes. Here's What I Learned.</h2>
-    <div class="date">September 30, 2026 · 6 min read</div>
-    <div class="fake-image">🐦</div>
-    <p>Yesterday I saw a pigeon walking with purpose. Not normal pigeon purpose, either. This pigeon looked like it had somewhere to be.</p>
-    <p>I followed it across three streets, past a bakery, and directly into a parking garage. Then it stopped. It looked at me.</p>
-    <p>I looked at it. Neither of us blinked.</p>
-    <p>Eventually it flew away. I have learned nothing.</p>
-    <button class="read" onclick="react(this)">♥ I BELIEVE YOU</button>
-  </article>
-
-  <!-- BLOG 2 -->
-  <article class="post">
-    <span class="category">Science</span>
-    <h2>Scientists Still Don't Know Where All the Missing Tupperware Lids Go</h2>
-    <div class="date">September 27, 2026 · 4 min read</div>
-    <div class="fake-image">🥡</div>
-    <p>We have sent robots to Mars. We have photographed black holes. We can make phones that translate languages in real time.</p>
-    <p>And yet nobody can explain the Tupperware drawer.</p>
-    <p>Every container has a lid when you buy it. Somehow, three months later, the lids have become a completely separate civilization.</p>
-    <button class="read" onclick="react(this)">♥ THIS IS TRUE</button>
-  </article>
-
-  <!-- BLOG 3 -->
-  <article class="post">
-    <span class="category">Opinion</span>
-    <h2>My Houseplant Has Started Looking at Me</h2>
-    <div class="date">September 21, 2026 · 8 min read</div>
-    <div class="fake-image">🪴</div>
-    <p>I bought a small plant because someone told me plants are relaxing.</p>
-    <p>Nobody mentioned that plants have eyes.</p>
-    <p>Okay, technically this one doesn't have eyes. But every time I walk past it, I feel like it knows what I did.</p>
-    <button class="read" onclick="react(this)">♥ CONCERNING</button>
-  </article>
-  
-  <!-- BLOG 4 -->
-  <article class="post">
-    <span class="category">Local News</span>
-    <h2>Local Man Discovers His Left Shoe Is Slightly More Powerful Than His Right Shoe</h2>
-    <div class="date">September 18, 2026 · 3 min read</div>
-    <div class="fake-image">👟</div>
-    <p>Greg noticed something unusual during his morning walk: his left shoe seemed to have considerably more confidence than the right one.</p>
-    <p>He tested the theory by walking to the refrigerator. The results were inconclusive.</p>
-    <button class="read" onclick="react(this)">♥ IMPORTANT</button>
-  </article>
-
-  <!-- BLOG 5 -->
-  <article class="post">
-    <span class="category">Lifestyle</span>
-    <h2>I Ranked Every Spoon in My Kitchen</h2>
-    <div class="date">September 15, 2026 · 11 min read</div>
-    <div class="fake-image">🥄</div>
-    <p>There are seven spoons in my kitchen. After careful consideration, I have ranked them.</p>
-    <p>Spoon #4 came first because it "looked like it had experience."</p>
-    <p>Spoon #2 remains under investigation.</p>
-    <button class="read" onclick="react(this)">♥ I AGREE</button>
-  </article>
-
-  <!-- BLOG 6 -->
-  <article class="post">
-    <span class="category">Breaking</span>
-    <h2>Nobody Has Done Anything Interesting Today</h2>
-    <div class="date">September 12, 2026 · 1 min read</div>
-    <div class="fake-image">📰</div>
-    <p>After hours of searching for something worth reporting, our newsroom has reached an unfortunate conclusion.</p>
-    <p>Nothing happened.</p>
-    <p>We are reporting this anyway.</p>
-    <button class="read" onclick="react(this)">♥ NEWS</button>
-  </article>
-
-  <!-- BLOG 7 -->
-  <article class="post">
-    <span class="category">Science</span>
-    <h2>What If Clouds Are Just Sky Potatoes?</h2>
-    <div class="date">September 9, 2026 · 5 min read</div>
-    <div class="fake-image">☁️🥔</div>
-    <p>For years, people have looked into the sky without asking the obvious question.</p>
-    <p>What if clouds are potatoes?</p>
-    <p>After staring at one for eleven seconds, our conclusion remains unchanged: probably potato.</p>
-    <button class="read" onclick="react(this)">♥ SCIENCE!</button>
-  </article>
-
-  <!-- BLOG 8 -->
-  <article class="post">
-    <span class="category">Productivity</span>
-    <h2>Five Ways to Look Busy While Doing Absolutely Nothing</h2>
-    <div class="date">September 6, 2026 · 7 min read</div>
-    <div class="fake-image">🛋️</div>
-    <p>Carry a notebook around without ever opening it.</p>
-    <p>Occasionally say "interesting" while staring at a wall.</p>
-    <p>Walk somewhere with confidence and then immediately forget why you went there.</p>
-    <button class="read" onclick="react(this)">♥ PRODUCTIVE</button>
-  </article>
-
-  <!-- BLOG 9 -->
-  <article class="post">
-    <span class="category">Food</span>
-    <h2>I Ate a Sandwich in the Exact Middle of the Day</h2>
-    <div class="date">September 3, 2026 · 4 min read</div>
-    <div class="fake-image">🥪</div>
-    <p>At precisely an unspecified time, I consumed a sandwich.</p>
-    <p>The sandwich contained bread.</p>
-    <p>This is easily the most consequential lunch report I have ever written.</p>
-    <button class="read" onclick="react(this)">♥ DELICIOUS</button>
-  </article>
-
-  <!-- BLOG 10 -->
-  <article class="post">
-    <span class="category">Technology</span>
-    <h2>My Calculator Has Too Many Buttons</h2>
-    <div class="date">August 31, 2026 · 6 min read</div>
-    <div class="fake-image">🧮</div>
-    <p>I counted the buttons on my calculator.</p>
-    <p>Then I forgot the number.</p>
-    <p>I counted them again.</p>
-    <p>This process has changed nothing about my life.</p>
-    <button class="read" onclick="react(this)">♥ COMPUTE</button>
-  </article>
-
-  <!-- BLOG 11 -->
-  <article class="post">
-    <span class="category">Fashion</span>
-    <h2>New Study Finds Hats Make You 73% More Hat-Like</h2>
-    <div class="date">August 28, 2026 · 9 min read</div>
-    <div class="fake-image">🎩</div>
-    <p>The findings are difficult to argue with.</p>
-    <p>Participants wearing hats were noticeably more likely to be wearing hats.</p>
-    <p>Researchers described the results as "pretty obvious."</p>
-    <button class="read" onclick="react(this)">♥ FANCY</button>
-  </article>
-
-  <!-- BLOG 12 -->
-  <article class="post">
-    <span class="category">Philosophy</span>
-    <h2>Is a Hot Dog a Sandwich? We Refuse to Answer</h2>
-    <div class="date">August 24, 2026 · 13 min read</div>
-    <div class="fake-image">🌭</div>
-    <p>After extensive consideration, our editorial team has decided that this question is somebody else's problem.</p>
-    <p>We have therefore written 900 words about refusing to write the answer.</p>
-    <p>You're welcome.</p>
-    <button class="read" onclick="react(this)">♥ NO COMMENT</button>
-  </article>
-
-  <!-- BLOG 13 -->
-  <article class="post">
-    <span class="category">Breaking News</span>
-    <h2>Man Opens Refrigerator, Finds Exactly What He Expected</h2>
-    <div class="date">August 20, 2026 · 2 min read</div>
-    <div class="fake-image">🧊</div>
-    <p>In a surprising development, a refrigerator contained the same objects it contained approximately ten minutes earlier.</p>
-    <p>"I was surprised," said Greg, despite having put the food there himself.</p>
-    <button class="read" onclick="react(this)">♥ SHOCKING</button>
-  </article>
-
-  <!-- BLOG 14 -->
-  <article class="post">
-    <span class="category">Investigation</span>
-    <h2>Where Do Single Socks Go When They Escape the Dryer?</h2>
-    <div class="date">August 17, 2026 · 5 min read</div>
-    <div class="fake-image">🧦</div>
-    <p>I put eight pairs of socks into the laundry. I retrieved seven pairs and one blue striped sock with no remaining purpose.</p>
-    <p>My prevailing theory is that missing socks pass through a temporary wormhole into another dimension where they lead fulfilling lives.</p>
-    <p>I respect their independence, but I still want my left sock back.</p>
-    <button class="read" onclick="react(this)">♥ RECOVERY MISSION</button>
-  </article>
-
-  <!-- BLOG 15 -->
-  <article class="post">
-    <span class="category">Fitness</span>
-    <h2>I Stared at a Treadmill for 20 Minutes and Feel Exhausted</h2>
-    <div class="date">August 14, 2026 · 4 min read</div>
-    <div class="fake-image">🏃</div>
-    <p>Gym experts tell us that consistency is key. Today I stood in front of a running treadmill for twenty full minutes.</p>
-    <p>Mental effort counts for at least 80% of cardio, according to zero legitimate doctors.</p>
-    <p>I rewarded myself with a smoothie and a nap.</p>
-    <button class="read" onclick="react(this)">♥ ATHLETIC</button>
-  </article>
-
-  <!-- BLOG 16 -->
-  <article class="post">
-    <span class="category">Technology</span>
-    <h2>Why Does Microwave Minute Feel Twice as Long as Regular Minute?</h2>
-    <div class="date">August 10, 2026 · 6 min read</div>
-    <div class="fake-image">⏱️</div>
-    <p>Standard physics states time is linear and constant. Anyone reheating leftover soup knows this is a lie.</p>
-    <p>Sixty seconds on a microwave clock actually lasts approximately 4.5 standard human minutes.</p>
-    <p>Albert Einstein failed to account for waiting for hot cheese.</p>
-    <button class="read" onclick="react(this)">♥ TIME DILATION</button>
-  </article>
-
-  <!-- BLOG 17 -->
-  <article class="post">
-    <span class="category">Architecture</span>
-    <h2>I Stared at Stairs Until I Forgot How Walking Works</h2>
-    <div class="date">August 7, 2026 · 3 min read</div>
-    <div class="fake-image">🪜</div>
-    <p>Stairs are just concrete shelves we step on to go upwards.</p>
-    <p>Once you realize this mid-step, your brain stops trusting your knees. I had to sit down on step 4 for ten minutes.</p>
-    <p>Elevators are clearly the superior lifestyle choice.</p>
-    <button class="read" onclick="react(this)">♥ VERTIGO</button>
-  </article>
-
-  <!-- BLOG 18 -->
-  <article class="post">
-    <span class="category">Nature</span>
-    <h2>Ducks Are suspiciously Calm in Cold Water</h2>
-    <div class="date">August 3, 2026 · 5 min read</div>
-    <div class="fake-image">🦆</div>
-    <p>I visited the local pond yesterday while wearing three sweaters. The ducks were floating calmly in freezing water.</p>
-    <p>No shivering, no complaints, no hot cocoa in sight.</p>
-
-    <p>What are ducks hiding from us?</p>
-    <button class="read" onclick="react(this)">♥ SUSPICIOUS</button>
-  </article>
-
-  <!-- BLOG 19 -->
-  <article class="post">
-    <span class="category">Art & Culture</span>
-    <h2>I Drew a Circle and It Turned Out Slightly Oval</h2>
-    <div class="date">July 30, 2026 · 7 min read</div>
-    <div class="fake-image">⭕</div>
-    <p>Attempting perfection is a human flaw. Today I tried drawing a flawless circle freehand.</p>
-    <p>The result resembled an egg that was mildly offended.</p>
-    <p>I am framing it as abstract minimalism.</p>
-    <button class="read" onclick="react(this)">♥ ARTISTIC</button>
-  </article>
-
-  <!-- BLOG 20 -->
-  <article class="post">
-    <span class="category">Home Economics</span>
-    <h2>The Mystery of the Screws Left Over After Assembling Furniture</h2>
-    <div class="date">July 26, 2026 · 8 min read</div>
-    <div class="fake-image">🔧</div>
-    <p>I built a bookshelf using clear pictorial instructions. The bookshelf stands straight and holds books.</p>
-    <p>Yet there are four silver screws and an Allen wrench lying on my rug.</p>
-    <p>Where did they belong? Does the bookshelf know? I am afraid to touch it.</p>
-    <button class="read" onclick="react(this)">♥ DANGEROUS</button>
-  </article>
-
-  <!-- BLOG 21 -->
-  <article class="post">
-    <span class="category">Weather</span>
-    <h2>It Rained for Three Minutes Just to Make Me Look Foolish</h2>
-    <div class="date">July 22, 2026 · 2 min read</div>
-    <div class="fake-image">🌧️</div>
-    <p>I opened my umbrella, took three strides onto the sidewalk, and the sun immediately broke through the clouds.</p>
-    <p>The sky is mocking my weather app.</p>
-    <p>I carried the umbrella open for the rest of my walk to maintain authority.</p>
-    <button class="read" onclick="react(this)">♥ METEOROLOGY</button>
-  </article>
-
-  <!-- BLOG 22 -->
-  <article class="post">
-    <span class="category">Gaming</span>
-    <h2>I Played Tic-Tac-Toe Against Myself and Lost</h2>
-    <div class="date">July 18, 2026 · 4 min read</div>
-    <div class="fake-image">❌⭕</div>
-    <p>To test my tactical foresight, I played a friendly match of Tic-Tac-Toe against my left hand.</p>
-    <p>My right hand made a critical tactical blunder on turn three.</p>
-    <p>My left hand celebrated with a quiet fist bump.</p>
-    <button class="read" onclick="react(this)">♥ TACTICAL</button>
-  </article>
-
-  <!-- BLOG 23 -->
-  <article class="post">
-    <span class="category">Mystery</span>
-    <h2>Who Is Pressing the Doorbell in My Dreams?</h2>
-    <div class="date">July 15, 2026 · 6 min read</div>
-    <div class="fake-image">🔔</div>
-    <p>At 6:00 AM I woke up to a loud ding-dong chime ringing clearly in my mind.</p>
-    <p>I ran to the front door in my pajamas. Nobody was there except a squirrel looking nonchalant.</p>
-    <p>I am placing the squirrel on my suspect board.</p>
-    <button class="read" onclick="react(this)">♥ INVESTIGATE</button>
-  </article>
-
-  <!-- BLOG 24 -->
-  <article class="post">
-    <span class="category">Culinary</span>
-    <h2>I Tried Toasting Bread Twice and Created Charcoal</h2>
-    <div class="date">July 11, 2026 · 5 min read</div>
-    <div class="fake-image">🍞</div>
-    <p>Setting 3 was too soft. Setting 4 was acceptable. I wondered what Setting 6 would achieve.</p>
-    <p>My smoke alarm provided the definitive answer.</p>
-    <p>My kitchen smelled like a campfire for two days.</p>
-    <button class="read" onclick="react(this)">♥ CRISPY</button>
-  </article>
-
-  <!-- BLOG 25 -->
-  <article class="post">
-    <span class="category">Music</span>
-    <h2>An Elevator Jingle Has Been Stuck in My Head Since Tuesday</h2>
-    <div class="date">July 8, 2026 · 9 min read</div>
-    <div class="fake-image">🎼</div>
-    <p>Three smooth synth notes played while descending to the ground floor. They have played continuously in my brain ever since.</p>
-    <p>I tried humming Beethoven to override it. Beethoven lost.</p>
-    <p>This elevator needs a record deal.</p>
-    <button class="read" onclick="react(this)">♥ CATCHY</button>
-  </article>
-
-  <!-- BLOG 26 -->
-  <article class="post">
-    <span class="category">Botany</span>
-    <h2>Dandelions Are Just Weeds With Great Public Relations</h2>
-    <div class="date">July 4, 2026 · 4 min read</div>
-    <div class="fake-image">🌼</div>
-    <p>If a plant grows uninvited in your lawn, it is a weed. But if you blow on it and make a wish, suddenly it is magic?</p>
-    <p>The branding team behind dandelions deserves a promotion.</p>
-    <p>My lawn is full of magical trespassers.</p>
-    <button class="read" onclick="react(this)">♥ MAKE A WISH</button>
-  </article>
-
-  <!-- BLOG 27 -->
-  <article class="post">
-    <span class="category">Psychology</span>
-    <h2>Why Do We Wiggle Our Keys to Make Them Work Better?</h2>
-    <div class="date">June 30, 2026 · 6 min read</div>
-    <div class="fake-image">🔑</div>
-    <p>My front door key refused to turn. I wiggled it gently, pulled it back 1 millimeter, and blew air into the keyhole.</p>
-    <p>It opened immediately.</p>
-    <p>Locks demand a ritual before granting passage.</p>
-    <button class="read" onclick="react(this)">♥ IT WORKS</button>
-  </article>
-
-  <!-- BLOG 28 -->
-  <article class="post">
-    <span class="category">Finance</span>
-    <h2>I Found a Nickel on the Sidewalk and Felt Rich</h2>
-    <div class="date">June 26, 2026 · 3 min read</div>
-    <div class="fake-image">🪙</div>
-    <p>Five whole cents lying upside down near the curb. Free money from the universe.</p>
-    <p>I picked it up, wiped off the dirt, and felt like a successful treasure hunter.</p>
-    <p>My net worth increased by 0.002% instantly.</p>
-    <button class="read" onclick="react(this)">♥ PROFIT</button>
-  </article>
-
-  <!-- BLOG 29 -->
-  <article class="post">
-    <span class="category">Literature</span>
-    <h2>I Read the Back of a Cereal Box and Was Moved to Tears</h2>
-    <div class="date">June 22, 2026 · 7 min read</div>
-    <div class="fake-image">🥣</div>
-    <p>The maze on the back was complex yet achievable. The word search held profound truths.</p>
-    <p>Who wrote this masterpiece? Why haven't they won a Pulitzer Prize?</p>
-    <p>Breakfast literature is heavily underrated.</p>
-    <button class="read" onclick="react(this)">♥ DEEP</button>
-  </article>
-
-  <!-- BLOG 30 -->
-  <article class="post">
-    <span class="category">Design</span>
-    <h2>Push vs Pull Doors: A Daily Human Struggle</h2>
-    <div class="date">June 18, 2026 · 5 min read</div>
-    <div class="fake-image">🚪</div>
-    <p>I walked up to a glass door with a handleset. I pushed forcefully. Nothing moved.</p>
-    <p>A small sign said 'PULL'. I pulled. It opened effortlessly.</p>
-    <p>I pretended I was just testing the structural integrity of the frame.</p>
-    <button class="read" onclick="react(this)">♥ EMBARRASSING</button>
-  </article>
-
-  <!-- BLOG 31 -->
-  <article class="post">
-    <span class="category">Travel</span>
-    <h2>I Packed Three Extra Pairs of Pants Just in Case</h2>
-    <div class="date">June 14, 2026 · 4 min read</div>
-    <div class="fake-image">🧳</div>
-    <p>I went on a two-day weekend trip to a town 30 miles away.</p>
-    <p>My luggage contained six shirts, five pairs of pants, and two raincoats. What did I anticipate? Spontaneous swamp survival?</p>
-    <p>I wore one pair of jeans the entire weekend.</p>
-    <button class="read" onclick="react(this)">♥ PREPARED</button>
-  </article>
-
-  <!-- BLOG 32 -->
-  <article class="post">
-    <span class="category">Astronomy</span>
-    <h2>The Moon Was Out During the Day and It Felt Illegal</h2>
-    <div class="date">June 10, 2026 · 6 min read</div>
-    <div class="fake-image">🌙☀️</div>
-    <p>At 2:00 PM on a bright Thursday, I glanced up and saw the moon floating casually alongside the sun.</p>
-    <p>Who allowed this schedule overlap? Does the sun know?</p>
-    <p>Celestial management needs to check their calendar.</p>
-    <button class="read" onclick="react(this)">♥ OVERTIME</button>
-  </article>
-
-  <!-- BLOG 33 -->
-  <article class="post">
-    <span class="category">Philosophy</span>
-    <h2>If a Tree Falls in a Forest, Does It Make a Blog Post?</h2>
-    <div class="date">June 6, 2026 · 10 min read</div>
-    <div class="fake-image">🌲</div>
-    <p>In conclusion, after writing 33 articles about spoons, pigeons, shoes, and cereal boxes, one ultimate truth emerges.</p>
-    <p>Everything is a potential blog post if you stare at it long enough.</p>
-    <p>Thank you for reading my extremely real thoughts.</p>
-    <button class="read" onclick="react(this)">♥ ULTIMATE TRUTH</button>
-  </article>
-
+  <div class="loading-state" id="loading-spinner">
+    ⌛ Fetching stories from <code>./data.json</code>...
+  </div>
 </main>
 
 <aside class="sidebar">
@@ -848,14 +468,8 @@ footer strong {
 
     <h3>Topics</h3>
 
-    <div class="tags">
-      <span class="tag">Pigeons</span>
-      <span class="tag">Snacks</span>
-      <span class="tag">Science-ish</span>
-      <span class="tag">Socks</span>
-      <span class="tag">Mysteries</span>
-      <span class="tag">Nonsense</span>
-      <span class="tag">Very Serious</span>
+    <div class="tags" id="tags-container">
+      <!-- Dynamic JSON Topics Rendered Here -->
     </div>
 
   </div>
@@ -887,13 +501,67 @@ footer strong {
   </small>
 </footer>
 
-
 <div class="popup" id="popup">
   You're officially extremely informed.
 </div>
 
 <script>
+/* ================= ASYNC FETCH & RENDER ENGINE ================= */
+async function loadBlogData() {
+  const postsContainer = document.getElementById("posts");
+  const tagsContainer = document.getElementById("tags-container");
 
+  try {
+    const response = await fetch('./data.json');
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: Failed to fetch ./data.json`);
+    }
+
+    const data = await response.json();
+
+    // Render Sidebar Topics
+    if (data.topics && Array.isArray(data.topics)) {
+      tagsContainer.innerHTML = data.topics
+        .map(topic => `<span class="tag">${topic}</span>`)
+        .join("");
+    }
+
+    // Render Posts
+    if (data.posts && Array.isArray(data.posts)) {
+      postsContainer.innerHTML = data.posts.map(post => {
+        const paragraphsHtml = post.paragraphs
+          .map(paragraph => `<p>${paragraph}</p>`)
+          .join("");
+
+        return `
+          <article class="post">
+            <span class="category">${post.category}</span>
+            <h2>${post.title}</h2>
+            <div class="date">${post.date} · ${post.readTime}</div>
+            <div class="fake-image">${post.icon}</div>
+            ${paragraphsHtml}
+            <button class="read" onclick="react(this)">${post.buttonText}</button>
+          </article>
+        `;
+      }).join("");
+    } else {
+      postsContainer.innerHTML = `<div class="error-state">⚠️ Error: Invalid data structure in data.json</div>`;
+    }
+
+  } catch (error) {
+    console.error("Error loading blog data:", error);
+    postsContainer.innerHTML = `
+      <div class="error-state">
+        ❌ Could not load posts from <code>./data.json</code>.<br>
+        <small style="font-size: 14px; font-weight: normal; display: block; margin-top: 8px;">${error.message}</small>
+      </div>`;
+  }
+}
+
+// Fetch and render data when DOM is ready
+document.addEventListener("DOMContentLoaded", loadBlogData);
+
+/* ================= INTERACTION HANDLERS ================= */
 function react(button) {
   button.textContent = "♥ YOU HAVE SPOKEN";
   button.style.background = "#9ee493";
