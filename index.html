@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Extremely Real Blog</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #171717;
+  --paper: #fffdf7;
+  --yellow: #ffd84d;
+  --pink: #ff77ad;
+  --blue: #75cfff;
+  --green: #9ee493;
+  --purple: #b9a0ff;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  transition: filter 0.3s ease;
+}
+
+/* EASTER EGG: Pigeon Mode */
+body.pigeon-mode {
+  filter: grayscale(100%);
+}
+
+/* HEADER */
+
+header {
+  border-bottom: 3px solid var(--ink);
+  padding: 20px 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo span {
+  background: var(--yellow);
+  padding: 2px 7px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+  padding: 90px 6vw 70px;
+  background:
+    radial-gradient(circle at 90% 20%, var(--pink) 0 90px, transparent 91px),
+    radial-gradient(circle at 10% 80%, var(--blue) 0 120px, transparent 121px),
+    #fff5b8;
+  border-bottom: 3px solid var(--ink);
+}
+
+.hero-inner {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.kicker {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+h1 {
+  font-family: "Space Grotesk";
+  font-size: clamp(50px, 9vw, 110px);
+  line-height: .85;
+  max-width: 850px;
+  margin: 20px 0;
+  letter-spacing: -6px;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* LAYOUT WITH ABSOLUTE SIDEBAR */
+
+.layout {
+  max-width: 1050px;
+  margin: 70px auto;
+  padding: 0 25px;
+  position: relative; /* Container for absolute sidebar */
+}
+
+main {
+  width: calc(100% - 380px); /* Leave room for the 310px sidebar + 70px gap */
+}
+
+/* SIDEBAR - ABSOLUTE AT TOP */
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 310px;
+}
+
+/* POSTS */
+
+.post {
+  padding-bottom: 55px;
+  margin-bottom: 55px;
+  border-bottom: 2px dashed #aaa;
+}
+
+.post:last-child {
+  border: 0;
+}
+
+.category {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 2px solid var(--ink);
+  border-radius: 30px;
+  background: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.post:nth-child(2n) .category {
+  background: var(--pink);
+}
+
+.post:nth-child(3n) .category {
+  background: var(--purple);
+}
+
+.post:nth-child(4n) .category {
+  background: var(--yellow);
+}
+
+.post:nth-child(5n) .category {
+  background: var(--blue);
+}
+
+.post h2 {
+  font-family: "Space Grotesk";
+  font-size: 38px;
+  line-height: 1;
+  margin: 18px 0 10px;
+}
+
+.date {
+  color: #777;
+  font-size: 13px;
+}
+
+.post p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.read {
+  border: 2px solid var(--ink);
+  background: white;
+  padding: 10px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.read:hover {
+  background: var(--yellow);
+}
+
+/* FAKE IMAGE */
+
+.fake-image {
+  height: 210px;
+  margin: 25px 0;
+  border: 3px solid var(--ink);
+  display: grid;
+  place-items: center;
+  font-size: 70px;
+  background: var(--blue);
+  transform: rotate(-1deg);
+  user-select: none;
+}
+
+.post:nth-child(2n) .fake-image {
+  background: var(--pink);
+  transform: rotate(1deg);
+}
+
+.post:nth-child(3n) .fake-image {
+  background: var(--purple);
+  transform: rotate(-2deg);
+}
+
+.post:nth-child(4n) .fake-image {
+  background: var(--yellow);
+  transform: rotate(1.5deg);
+}
+
+.post:nth-child(5n) .fake-image {
+  background: var(--green);
+  transform: rotate(-1.5deg);
+}
+
+/* BOXES */
+
+.box {
+  border: 3px solid var(--ink);
+  padding: 23px;
+  margin-bottom: 25px;
+  background: white;
+  box-shadow: 7px 7px var(--ink);
+}
+
+.box h3 {
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.about {
+  background: var(--yellow);
+}
+
+input {
+  width: 100%;
+  border: 2px solid var(--ink);
+  padding: 12px;
+  font: inherit;
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  width: 100%;
+  border: 2px solid var(--ink);
+  background: var(--pink);
+  padding: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tag {
+  padding: 6px 9px;
+  border-radius: 20px;
+  background: #eee;
+  font-size: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--ink);
+  color: white;
+  padding: 50px 6vw;
+  text-align: center;
+}
+
+footer strong {
+  color: var(--yellow);
+}
+
+/* POPUP */
+
+.popup {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--pink);
+  border: 3px solid var(--ink);
+  padding: 18px 22px;
+  font-weight: 700;
+  box-shadow: 6px 6px var(--ink);
+  transform: translateY(150px);
+  transition: .4s;
+  z-index: 100;
+  max-width: 320px;
+}
+
+.popup.show {
+  transform: translateY(0);
+}
+
+/* EASTER EGG: Falling Pigeons */
+.pigeon-drop {
+  position: fixed;
+  top: -50px;
+  font-size: 30px;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1000;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh) rotate(360deg);
+  }
+}
+
+@media(max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  h1 {
+    letter-spacing: -3px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo" id="logo-egg" onclick="logoClick()">
+    THE <span>EXTREMELY REAL</span> BLOG
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#posts">Posts</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+
+    <div class="kicker">
+      ✦ Independent journalism-ish
+    </div>
+
+    <h1>
+      Important thoughts
+      about unimportant things.
+    </h1>
+
+    <p>
+      Welcome to the internet's least necessary blog,
+      where we investigate life's biggest questions,
+      such as why socks disappear and whether pigeons
+      have secret meetings.
+    </p>
+
+  </div>
+</section>
+
+<div class="layout">
+
+<main id="posts">
+
+  <!-- BLOG 1 -->
+  <article class="post">
+    <span class="category">Investigation</span>
+    <h2>I Followed a Pigeon for 47 Minutes. Here's What I Learned.</h2>
+    <div class="date">September 30, 2026 · 6 min read</div>
+    <div class="fake-image">🐦</div>
+    <p>Yesterday I saw a pigeon walking with purpose. Not normal pigeon purpose, either. This pigeon looked like it had somewhere to be.</p>
+    <p>I followed it across three streets, past a bakery, and directly into a parking garage. Then it stopped. It looked at me.</p>
+    <p>I looked at it. Neither of us blinked.</p>
+    <p>Eventually it flew away. I have learned nothing.</p>
+    <button class="read" onclick="react(this)">♥ I BELIEVE YOU</button>
+  </article>
+
+  <!-- BLOG 2 -->
+  <article class="post">
+    <span class="category">Science</span>
+    <h2>Scientists Still Don't Know Where All the Missing Tupperware Lids Go</h2>
+    <div class="date">September 27, 2026 · 4 min read</div>
+    <div class="fake-image">🥡</div>
+    <p>We have sent robots to Mars. We have photographed black holes. We can make phones that translate languages in real time.</p>
+    <p>And yet nobody can explain the Tupperware drawer.</p>
+    <p>Every container has a lid when you buy it. Somehow, three months later, the lids have become a completely separate civilization.</p>
+    <button class="read" onclick="react(this)">♥ THIS IS TRUE</button>
+  </article>
+
+  <!-- BLOG 3 -->
+  <article class="post">
+    <span class="category">Opinion</span>
+    <h2>My Houseplant Has Started Looking at Me</h2>
+    <div class="date">September 21, 2026 · 8 min read</div>
+    <div class="fake-image">🪴</div>
+    <p>I bought a small plant because someone told me plants are relaxing.</p>
+    <p>Nobody mentioned that plants have eyes.</p>
+    <p>Okay, technically this one doesn't have eyes. But every time I walk past it, I feel like it knows what I did.</p>
+    <button class="read" onclick="react(this)">♥ CONCERNING</button>
+  </article>
+  
+  <!-- BLOG 4 -->
+  <article class="post">
+    <span class="category">Local News</span>
+    <h2>Local Man Discovers His Left Shoe Is Slightly More Powerful Than His Right Shoe</h2>
+    <div class="date">September 18, 2026 · 3 min read</div>
+    <div class="fake-image">👟</div>
+    <p>Greg noticed something unusual during his morning walk: his left shoe seemed to have considerably more confidence than the right one.</p>
+    <p>He tested the theory by walking to the refrigerator. The results were inconclusive.</p>
+    <button class="read" onclick="react(this)">♥ IMPORTANT</button>
+  </article>
+
+  <!-- BLOG 5 -->
+  <article class="post">
+    <span class="category">Lifestyle</span>
+    <h2>I Ranked Every Spoon in My Kitchen</h2>
+    <div class="date">September 15, 2026 · 11 min read</div>
+    <div class="fake-image">🥄</div>
+    <p>There are seven spoons in my kitchen. After careful consideration, I have ranked them.</p>
+    <p>Spoon #4 came first because it "looked like it had experience."</p>
+    <p>Spoon #2 remains under investigation.</p>
+    <button class="read" onclick="react(this)">♥ I AGREE</button>
+  </article>
+
+  <!-- BLOG 6 -->
+  <article class="post">
+    <span class="category">Breaking</span>
+    <h2>Nobody Has Done Anything Interesting Today</h2>
+    <div class="date">September 12, 2026 · 1 min read</div>
+    <div class="fake-image">📰</div>
+    <p>After hours of searching for something worth reporting, our newsroom has reached an unfortunate conclusion.</p>
+    <p>Nothing happened.</p>
+    <p>We are reporting this anyway.</p>
+    <button class="read" onclick="react(this)">♥ NEWS</button>
+  </article>
+
+  <!-- BLOG 7 -->
+  <article class="post">
+    <span class="category">Science</span>
+    <h2>What If Clouds Are Just Sky Potatoes?</h2>
+    <div class="date">September 9, 2026 · 5 min read</div>
+    <div class="fake-image">☁️🥔</div>
+    <p>For years, people have looked into the sky without asking the obvious question.</p>
+    <p>What if clouds are potatoes?</p>
+    <p>After staring at one for eleven seconds, our conclusion remains unchanged: probably potato.</p>
+    <button class="read" onclick="react(this)">♥ SCIENCE!</button>
+  </article>
+
+  <!-- BLOG 8 -->
+  <article class="post">
+    <span class="category">Productivity</span>
+    <h2>Five Ways to Look Busy While Doing Absolutely Nothing</h2>
+    <div class="date">September 6, 2026 · 7 min read</div>
+    <div class="fake-image">🛋️</div>
+    <p>Carry a notebook around without ever opening it.</p>
+    <p>Occasionally say "interesting" while staring at a wall.</p>
+    <p>Walk somewhere with confidence and then immediately forget why you went there.</p>
+    <button class="read" onclick="react(this)">♥ PRODUCTIVE</button>
+  </article>
+
+  <!-- BLOG 9 -->
+  <article class="post">
+    <span class="category">Food</span>
+    <h2>I Ate a Sandwich in the Exact Middle of the Day</h2>
+    <div class="date">September 3, 2026 · 4 min read</div>
+    <div class="fake-image">🥪</div>
+    <p>At precisely an unspecified time, I consumed a sandwich.</p>
+    <p>The sandwich contained bread.</p>
+    <p>This is easily the most consequential lunch report I have ever written.</p>
+    <button class="read" onclick="react(this)">♥ DELICIOUS</button>
+  </article>
+
+  <!-- BLOG 10 -->
+  <article class="post">
+    <span class="category">Technology</span>
+    <h2>My Calculator Has Too Many Buttons</h2>
+    <div class="date">August 31, 2026 · 6 min read</div>
+    <div class="fake-image">🧮</div>
+    <p>I counted the buttons on my calculator.</p>
+    <p>Then I forgot the number.</p>
+    <p>I counted them again.</p>
+    <p>This process has changed nothing about my life.</p>
+    <button class="read" onclick="react(this)">♥ COMPUTE</button>
+  </article>
+
+  <!-- BLOG 11 -->
+  <article class="post">
+    <span class="category">Fashion</span>
+    <h2>New Study Finds Hats Make You 73% More Hat-Like</h2>
+    <div class="date">August 28, 2026 · 9 min read</div>
+    <div class="fake-image">🎩</div>
+    <p>The findings are difficult to argue with.</p>
+    <p>Participants wearing hats were noticeably more likely to be wearing hats.</p>
+    <p>Researchers described the results as "pretty obvious."</p>
+    <button class="read" onclick="react(this)">♥ FANCY</button>
+  </article>
+
+  <!-- BLOG 12 -->
+  <article class="post">
+    <span class="category">Philosophy</span>
+    <h2>Is a Hot Dog a Sandwich? We Refuse to Answer</h2>
+    <div class="date">August 24, 2026 · 13 min read</div>
+    <div class="fake-image">🌭</div>
+    <p>After extensive consideration, our editorial team has decided that this question is somebody else's problem.</p>
+    <p>We have therefore written 900 words about refusing to write the answer.</p>
+    <p>You're welcome.</p>
+    <button class="read" onclick="react(this)">♥ NO COMMENT</button>
+  </article>
+
+  <!-- BLOG 13 -->
+  <article class="post">
+    <span class="category">Breaking News</span>
+    <h2>Man Opens Refrigerator, Finds Exactly What He Expected</h2>
+    <div class="date">August 20, 2026 · 2 min read</div>
+    <div class="fake-image">🧊</div>
+    <p>In a surprising development, a refrigerator contained the same objects it contained approximately ten minutes earlier.</p>
+    <p>"I was surprised," said Greg, despite having put the food there himself.</p>
+    <button class="read" onclick="react(this)">♥ SHOCKING</button>
+  </article>
+
+  <!-- BLOG 14 -->
+  <article class="post">
+    <span class="category">Investigation</span>
+    <h2>Where Do Single Socks Go When They Escape the Dryer?</h2>
+    <div class="date">August 17, 2026 · 5 min read</div>
+    <div class="fake-image">🧦</div>
+    <p>I put eight pairs of socks into the laundry. I retrieved seven pairs and one blue striped sock with no remaining purpose.</p>
+    <p>My prevailing theory is that missing socks pass through a temporary wormhole into another dimension where they lead fulfilling lives.</p>
+    <p>I respect their independence, but I still want my left sock back.</p>
+    <button class="read" onclick="react(this)">♥ RECOVERY MISSION</button>
+  </article>
+
+  <!-- BLOG 15 -->
+  <article class="post">
+    <span class="category">Fitness</span>
+    <h2>I Stared at a Treadmill for 20 Minutes and Feel Exhausted</h2>
+    <div class="date">August 14, 2026 · 4 min read</div>
+    <div class="fake-image">🏃</div>
+    <p>Gym experts tell us that consistency is key. Today I stood in front of a running treadmill for twenty full minutes.</p>
+    <p>Mental effort counts for at least 80% of cardio, according to zero legitimate doctors.</p>
+    <p>I rewarded myself with a smoothie and a nap.</p>
+    <button class="read" onclick="react(this)">♥ ATHLETIC</button>
+  </article>
+
+  <!-- BLOG 16 -->
+  <article class="post">
+    <span class="category">Technology</span>
+    <h2>Why Does Microwave Minute Feel Twice as Long as Regular Minute?</h2>
+    <div class="date">August 10, 2026 · 6 min read</div>
+    <div class="fake-image">⏱️</div>
+    <p>Standard physics states time is linear and constant. Anyone reheating leftover soup knows this is a lie.</p>
+    <p>Sixty seconds on a microwave clock actually lasts approximately 4.5 standard human minutes.</p>
+    <p>Albert Einstein failed to account for waiting for hot cheese.</p>
+    <button class="read" onclick="react(this)">♥ TIME DILATION</button>
+  </article>
+
+  <!-- BLOG 17 -->
+  <article class="post">
+    <span class="category">Architecture</span>
+    <h2>I Stared at Stairs Until I Forgot How Walking Works</h2>
+    <div class="date">August 7, 2026 · 3 min read</div>
+    <div class="fake-image">🪜</div>
+    <p>Stairs are just concrete shelves we step on to go upwards.</p>
+    <p>Once you realize this mid-step, your brain stops trusting your knees. I had to sit down on step 4 for ten minutes.</p>
+    <p>Elevators are clearly the superior lifestyle choice.</p>
+    <button class="read" onclick="react(this)">♥ VERTIGO</button>
+  </article>
+
+  <!-- BLOG 18 -->
+  <article class="post">
+    <span class="category">Nature</span>
+    <h2>Ducks Are suspiciously Calm in Cold Water</h2>
+    <div class="date">August 3, 2026 · 5 min read</div>
+    <div class="fake-image">🦆</div>
+    <p>I visited the local pond yesterday while wearing three sweaters. The ducks were floating calmly in freezing water.</p>
+    <p>No shivering, no complaints, no hot cocoa in sight.</p>
+
+    <p>What are ducks hiding from us?</p>
+    <button class="read" onclick="react(this)">♥ SUSPICIOUS</button>
+  </article>
+
+  <!-- BLOG 19 -->
+  <article class="post">
+    <span class="category">Art & Culture</span>
+    <h2>I Drew a Circle and It Turned Out Slightly Oval</h2>
+    <div class="date">July 30, 2026 · 7 min read</div>
+    <div class="fake-image">⭕</div>
+    <p>Attempting perfection is a human flaw. Today I tried drawing a flawless circle freehand.</p>
+    <p>The result resembled an egg that was mildly offended.</p>
+    <p>I am framing it as abstract minimalism.</p>
+    <button class="read" onclick="react(this)">♥ ARTISTIC</button>
+  </article>
+
+  <!-- BLOG 20 -->
+  <article class="post">
+    <span class="category">Home Economics</span>
+    <h2>The Mystery of the Screws Left Over After Assembling Furniture</h2>
+    <div class="date">July 26, 2026 · 8 min read</div>
+    <div class="fake-image">🔧</div>
+    <p>I built a bookshelf using clear pictorial instructions. The bookshelf stands straight and holds books.</p>
+    <p>Yet there are four silver screws and an Allen wrench lying on my rug.</p>
+    <p>Where did they belong? Does the bookshelf know? I am afraid to touch it.</p>
+    <button class="read" onclick="react(this)">♥ DANGEROUS</button>
+  </article>
+
+  <!-- BLOG 21 -->
+  <article class="post">
+    <span class="category">Weather</span>
+    <h2>It Rained for Three Minutes Just to Make Me Look Foolish</h2>
+    <div class="date">July 22, 2026 · 2 min read</div>
+    <div class="fake-image">🌧️</div>
+    <p>I opened my umbrella, took three strides onto the sidewalk, and the sun immediately broke through the clouds.</p>
+    <p>The sky is mocking my weather app.</p>
+    <p>I carried the umbrella open for the rest of my walk to maintain authority.</p>
+    <button class="read" onclick="react(this)">♥ METEOROLOGY</button>
+  </article>
+
+  <!-- BLOG 22 -->
+  <article class="post">
+    <span class="category">Gaming</span>
+    <h2>I Played Tic-Tac-Toe Against Myself and Lost</h2>
+    <div class="date">July 18, 2026 · 4 min read</div>
+    <div class="fake-image">❌⭕</div>
+    <p>To test my tactical foresight, I played a friendly match of Tic-Tac-Toe against my left hand.</p>
+    <p>My right hand made a critical tactical blunder on turn three.</p>
+    <p>My left hand celebrated with a quiet fist bump.</p>
+    <button class="read" onclick="react(this)">♥ TACTICAL</button>
+  </article>
+
+  <!-- BLOG 23 -->
+  <article class="post">
+    <span class="category">Mystery</span>
+    <h2>Who Is Pressing the Doorbell in My Dreams?</h2>
+    <div class="date">July 15, 2026 · 6 min read</div>
+    <div class="fake-image">🔔</div>
+    <p>At 6:00 AM I woke up to a loud ding-dong chime ringing clearly in my mind.</p>
+    <p>I ran to the front door in my pajamas. Nobody was there except a squirrel looking nonchalant.</p>
+    <p>I am placing the squirrel on my suspect board.</p>
+    <button class="read" onclick="react(this)">♥ INVESTIGATE</button>
+  </article>
+
+  <!-- BLOG 24 -->
+  <article class="post">
+    <span class="category">Culinary</span>
+    <h2>I Tried Toasting Bread Twice and Created Charcoal</h2>
+    <div class="date">July 11, 2026 · 5 min read</div>
+    <div class="fake-image">🍞</div>
+    <p>Setting 3 was too soft. Setting 4 was acceptable. I wondered what Setting 6 would achieve.</p>
+    <p>My smoke alarm provided the definitive answer.</p>
+    <p>My kitchen smelled like a campfire for two days.</p>
+    <button class="read" onclick="react(this)">♥ CRISPY</button>
+  </article>
+
+  <!-- BLOG 25 -->
+  <article class="post">
+    <span class="category">Music</span>
+    <h2>An Elevator Jingle Has Been Stuck in My Head Since Tuesday</h2>
+    <div class="date">July 8, 2026 · 9 min read</div>
+    <div class="fake-image">🎼</div>
+    <p>Three smooth synth notes played while descending to the ground floor. They have played continuously in my brain ever since.</p>
+    <p>I tried humming Beethoven to override it. Beethoven lost.</p>
+    <p>This elevator needs a record deal.</p>
+    <button class="read" onclick="react(this)">♥ CATCHY</button>
+  </article>
+
+  <!-- BLOG 26 -->
+  <article class="post">
+    <span class="category">Botany</span>
+    <h2>Dandelions Are Just Weeds With Great Public Relations</h2>
+    <div class="date">July 4, 2026 · 4 min read</div>
+    <div class="fake-image">🌼</div>
+    <p>If a plant grows uninvited in your lawn, it is a weed. But if you blow on it and make a wish, suddenly it is magic?</p>
+    <p>The branding team behind dandelions deserves a promotion.</p>
+    <p>My lawn is full of magical trespassers.</p>
+    <button class="read" onclick="react(this)">♥ MAKE A WISH</button>
+  </article>
+
+  <!-- BLOG 27 -->
+  <article class="post">
+    <span class="category">Psychology</span>
+    <h2>Why Do We Wiggle Our Keys to Make Them Work Better?</h2>
+    <div class="date">June 30, 2026 · 6 min read</div>
+    <div class="fake-image">🔑</div>
+    <p>My front door key refused to turn. I wiggled it gently, pulled it back 1 millimeter, and blew air into the keyhole.</p>
+    <p>It opened immediately.</p>
+    <p>Locks demand a ritual before granting passage.</p>
+    <button class="read" onclick="react(this)">♥ IT WORKS</button>
+  </article>
+
+  <!-- BLOG 28 -->
+  <article class="post">
+    <span class="category">Finance</span>
+    <h2>I Found a Nickel on the Sidewalk and Felt Rich</h2>
+    <div class="date">June 26, 2026 · 3 min read</div>
+    <div class="fake-image">🪙</div>
+    <p>Five whole cents lying upside down near the curb. Free money from the universe.</p>
+    <p>I picked it up, wiped off the dirt, and felt like a successful treasure hunter.</p>
+    <p>My net worth increased by 0.002% instantly.</p>
+    <button class="read" onclick="react(this)">♥ PROFIT</button>
+  </article>
+
+  <!-- BLOG 29 -->
+  <article class="post">
+    <span class="category">Literature</span>
+    <h2>I Read the Back of a Cereal Box and Was Moved to Tears</h2>
+    <div class="date">June 22, 2026 · 7 min read</div>
+    <div class="fake-image">🥣</div>
+    <p>The maze on the back was complex yet achievable. The word search held profound truths.</p>
+    <p>Who wrote this masterpiece? Why haven't they won a Pulitzer Prize?</p>
+    <p>Breakfast literature is heavily underrated.</p>
+    <button class="read" onclick="react(this)">♥ DEEP</button>
+  </article>
+
+  <!-- BLOG 30 -->
+  <article class="post">
+    <span class="category">Design</span>
+    <h2>Push vs Pull Doors: A Daily Human Struggle</h2>
+    <div class="date">June 18, 2026 · 5 min read</div>
+    <div class="fake-image">🚪</div>
+    <p>I walked up to a glass door with a handleset. I pushed forcefully. Nothing moved.</p>
+    <p>A small sign said 'PULL'. I pulled. It opened effortlessly.</p>
+    <p>I pretended I was just testing the structural integrity of the frame.</p>
+    <button class="read" onclick="react(this)">♥ EMBARRASSING</button>
+  </article>
+
+  <!-- BLOG 31 -->
+  <article class="post">
+    <span class="category">Travel</span>
+    <h2>I Packed Three Extra Pairs of Pants Just in Case</h2>
+    <div class="date">June 14, 2026 · 4 min read</div>
+    <div class="fake-image">🧳</div>
+    <p>I went on a two-day weekend trip to a town 30 miles away.</p>
+    <p>My luggage contained six shirts, five pairs of pants, and two raincoats. What did I anticipate? Spontaneous swamp survival?</p>
+    <p>I wore one pair of jeans the entire weekend.</p>
+    <button class="read" onclick="react(this)">♥ PREPARED</button>
+  </article>
+
+  <!-- BLOG 32 -->
+  <article class="post">
+    <span class="category">Astronomy</span>
+    <h2>The Moon Was Out During the Day and It Felt Illegal</h2>
+    <div class="date">June 10, 2026 · 6 min read</div>
+    <div class="fake-image">🌙☀️</div>
+    <p>At 2:00 PM on a bright Thursday, I glanced up and saw the moon floating casually alongside the sun.</p>
+    <p>Who allowed this schedule overlap? Does the sun know?</p>
+    <p>Celestial management needs to check their calendar.</p>
+    <button class="read" onclick="react(this)">♥ OVERTIME</button>
+  </article>
+
+  <!-- BLOG 33 -->
+  <article class="post">
+    <span class="category">Philosophy</span>
+    <h2>If a Tree Falls in a Forest, Does It Make a Blog Post?</h2>
+    <div class="date">June 6, 2026 · 10 min read</div>
+    <div class="fake-image">🌲</div>
+    <p>In conclusion, after writing 33 articles about spoons, pigeons, shoes, and cereal boxes, one ultimate truth emerges.</p>
+    <p>Everything is a potential blog post if you stare at it long enough.</p>
+    <p>Thank you for reading my extremely real thoughts.</p>
+    <button class="read" onclick="react(this)">♥ ULTIMATE TRUTH</button>
+  </article>
+
+</main>
+
+<aside class="sidebar">
+
+  <div class="box about" id="about">
+    <h3>About the author</h3>
+
+    <p>
+      Hi. I'm Greg.
+    </p>
+
+    <p>
+      I started this blog after someone told me
+      I "have too many opinions."
+    </p>
+
+    <p>
+      This seemed like a good solution.
+    </p>
+  </div>
+
+
+  <div class="box">
+
+    <h3>Get extremely important emails</h3>
+
+    <input
+      id="email"
+      type="email"
+      placeholder="your@email.com"
+    >
+
+    <button
+      class="subscribe"
+      onclick="subscribe()"
+    >
+      SUBSCRIBE
+    </button>
+
+  </div>
+
+
+  <div class="box">
+
+    <h3>Topics</h3>
+
+    <div class="tags">
+      <span class="tag">Pigeons</span>
+      <span class="tag">Snacks</span>
+      <span class="tag">Science-ish</span>
+      <span class="tag">Socks</span>
+      <span class="tag">Mysteries</span>
+      <span class="tag">Nonsense</span>
+      <span class="tag">Very Serious</span>
+    </div>
+
+  </div>
+
+
+  <div class="box">
+
+    <h3>Currently thinking about</h3>
+
+    <p>
+      Why do we say "taking a shower"
+      when the shower is the thing doing
+      most of the work?
+    </p>
+
+  </div>
+
+</aside>
+
+</div>
+
+<footer>
+  <p>
+    © 2026 <strong>The Extremely Real Blog</strong>
+  </p>
+
+  <small>
+    All facts may or may not have been invented.
+  </small>
+</footer>
+
+
+<div class="popup" id="popup">
+  You're officially extremely informed.
+</div>
+
+<script>
+
+function react(button) {
+  button.textContent = "♥ YOU HAVE SPOKEN";
+  button.style.background = "#9ee493";
+
+  setTimeout(() => {
+    button.textContent = "♥ THANK YOU";
+  }, 1200);
+}
+
+function subscribe() {
+  const email = document.getElementById("email");
+
+  if (!email.value) {
+    email.focus();
+    email.placeholder = "You forgot this part 😭";
+    return;
+  }
+
+  showPopup("You're officially extremely informed.");
+  email.value = "";
+}
+
+function showPopup(text, bg = "var(--pink)") {
+  const popup = document.getElementById("popup");
+  popup.textContent = text;
+  popup.style.background = bg;
+  popup.classList.add("show");
+
+  setTimeout(() => {
+    popup.classList.remove("show");
+  }, 3800);
+}
+
+/* ================= EASTER EGGS ================= */
+
+// 1. Logo Click Counter (Pigeon Mode)
+let logoClicks = 0;
+function logoClick() {
+  logoClicks++;
+  if (logoClicks === 5) {
+    document.body.classList.toggle("pigeon-mode");
+    showPopup("🐦 PIGEON MODE ACTIVATED 🐦", "var(--blue)");
+    
+    // Spawn falling pigeons
+    for (let i = 0; i < 25; i++) {
+      setTimeout(() => {
+        const p = document.createElement('div');
+        p.className = 'pigeon-drop';
+        p.textContent = '🐦';
+        p.style.left = Math.random() * 100 + 'vw';
+        document.body.appendChild(p);
+        setTimeout(() => p.remove(), 3000);
+      }, i * 120);
+    }
+    logoClicks = 0;
+  }
+}
+
+// 2. Secret Keyboard Code ("greg") - Random Topic Generator
+const gregRandomTopics = [
+  "🤫 Greg says: Spoon #4 is still my favorite, but Spoon #2 is gaining ground.",
+  "🤫 Greg says: Did you know missing socks are secretly funding galactic exploration?",
+  "🤫 Greg says: I looked at a cloud today and it looked exactly like a baked potato.",
+  "🤫 Greg says: Left shoes are objectively 14% more energetic than right shoes.",
+  "🤫 Greg says: Stop typing my name and go check your Tupperware lid drawer!",
+  "🤫 Greg says: Microwave minutes are scientifically 4x longer than normal minutes.",
+  "🤫 Greg says: Pigeons don't sleep. They just wait.",
+  "🤫 Greg says: I once stared at a refrigerator for 12 minutes and learned nothing.",
+  "🤫 Greg says: Always carry an unopened notebook to appear 80% busier."
+];
+
+let keyBuffer = "";
+document.addEventListener("keydown", (e) => {
+  keyBuffer += e.key.toLowerCase();
+  if (keyBuffer.length > 10) keyBuffer = keyBuffer.slice(-10);
+
+  if (keyBuffer.includes("greg")) {
+    const randomQuote = gregRandomTopics[Math.floor(Math.random() * gregRandomTopics.length)];
+    showPopup(randomQuote, "var(--yellow)");
+    keyBuffer = "";
+  }
+});
+
+// 3. Konami Code (Up Up Down Down Left Right Left Right B A)
+const konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+let konamiIndex = 0;
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === konamiCode[konamiIndex] || e.key.toLowerCase() === konamiCode[konamiIndex]) {
+    konamiIndex++;
+    if (konamiIndex === konamiCode.length) {
+      showPopup("🎮 SECRET UNLOCKED: You are now 100% more gamer than before!", "var(--green)");
+      konamiIndex = 0;
+    }
+  } else {
+    konamiIndex = 0;
+  }
+});
+
+</script>
+
+</body>
+</html>
