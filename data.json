@@ -1,0 +1,475 @@
+{
+  "topics": [
+    "Pigeons",
+    "Snacks",
+    "Science-ish",
+    "Socks",
+    "Mysteries",
+    "Nonsense",
+    "Very Serious"
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "category": "Investigation",
+      "title": "I Followed a Pigeon for 47 Minutes. Here's What I Learned.",
+      "date": "September 30, 2026",
+      "readTime": "6 min read",
+      "icon": "🐦",
+      "paragraphs": [
+        "Yesterday I saw a pigeon walking with purpose. Not normal pigeon purpose, either. This pigeon looked like it had somewhere to be.",
+        "I followed it across three streets, past a bakery, and directly into a parking garage. Then it stopped. It looked at me.",
+        "I looked at it. Neither of us blinked.",
+        "Eventually it flew away. I have learned nothing."
+      ],
+      "buttonText": "♥ I BELIEVE YOU"
+    },
+    {
+      "id": 2,
+      "category": "Science",
+      "title": "Scientists Still Don't Know Where All the Missing Tupperware Lids Go",
+      "date": "September 27, 2026",
+      "readTime": "4 min read",
+      "icon": "🥡",
+      "paragraphs": [
+        "We have sent robots to Mars. We have photographed black holes. We can make phones that translate languages in real time.",
+        "And yet nobody can explain the Tupperware drawer.",
+        "Every container has a lid when you buy it. Somehow, three months later, the lids have become a completely separate civilization."
+      ],
+      "buttonText": "♥ THIS IS TRUE"
+    },
+    {
+      "id": 3,
+      "category": "Opinion",
+      "title": "My Houseplant Has Started Looking at Me",
+      "date": "September 21, 2026",
+      "readTime": "8 min read",
+      "icon": "🪴",
+      "paragraphs": [
+        "I bought a small plant because someone told me plants are relaxing.",
+        "Nobody mentioned that plants have eyes.",
+        "Okay, technically this one doesn't have eyes. But every time I walk past it, I feel like it knows what I did."
+      ],
+      "buttonText": "♥ CONCERNING"
+    },
+    {
+      "id": 4,
+      "category": "Local News",
+      "title": "Local Man Discovers His Left Shoe Is Slightly More Powerful Than His Right Shoe",
+      "date": "September 18, 2026",
+      "readTime": "3 min read",
+      "icon": "👟",
+      "paragraphs": [
+        "Greg noticed something unusual during his morning walk: his left shoe seemed to have considerably more confidence than the right one.",
+        "He tested the theory by walking to the refrigerator. The results were inconclusive."
+      ],
+      "buttonText": "♥ IMPORTANT"
+    },
+    {
+      "id": 5,
+      "category": "Lifestyle",
+      "title": "I Ranked Every Spoon in My Kitchen",
+      "date": "September 15, 2026",
+      "readTime": "11 min read",
+      "icon": "🥄",
+      "paragraphs": [
+        "There are seven spoons in my kitchen. After careful consideration, I have ranked them.",
+        "Spoon #4 came first because it \"looked like it had experience.\"",
+        "Spoon #2 remains under investigation."
+      ],
+      "buttonText": "♥ I AGREE"
+    },
+    {
+      "id": 6,
+      "category": "Breaking",
+      "title": "Nobody Has Done Anything Interesting Today",
+      "date": "September 12, 2026",
+      "readTime": "1 min read",
+      "icon": "📰",
+      "paragraphs": [
+        "After hours of searching for something worth reporting, our newsroom has reached an unfortunate conclusion.",
+        "Nothing happened.",
+        "We are reporting this anyway."
+      ],
+      "buttonText": "♥ NEWS"
+    },
+    {
+      "id": 7,
+      "category": "Science",
+      "title": "What If Clouds Are Just Sky Potatoes?",
+      "date": "September 9, 2026",
+      "readTime": "5 min read",
+      "icon": "☁️🥔",
+      "paragraphs": [
+        "For years, people have looked into the sky without asking the obvious question.",
+        "What if clouds are potatoes?",
+        "After staring at one for eleven seconds, our conclusion remains unchanged: probably potato."
+      ],
+      "buttonText": "♥ SCIENCE!"
+    },
+    {
+      "id": 8,
+      "category": "Productivity",
+      "title": "Five Ways to Look Busy While Doing Absolutely Nothing",
+      "date": "September 6, 2026",
+      "readTime": "7 min read",
+      "icon": "🛋️",
+      "paragraphs": [
+        "Carry a notebook around without ever opening it.",
+        "Occasionally say \"interesting\" while staring at a wall.",
+        "Walk somewhere with confidence and then immediately forget why you went there."
+      ],
+      "buttonText": "♥ PRODUCTIVE"
+    },
+    {
+      "id": 9,
+      "category": "Food",
+      "title": "I Ate a Sandwich in the Exact Middle of the Day",
+      "date": "September 3, 2026",
+      "readTime": "4 min read",
+      "icon": "🥪",
+      "paragraphs": [
+        "At precisely an unspecified time, I consumed a sandwich.",
+        "The sandwich contained bread.",
+        "This is easily the most consequential lunch report I have ever written."
+      ],
+      "buttonText": "♥ DELICIOUS"
+    },
+    {
+      "id": 10,
+      "category": "Technology",
+      "title": "My Calculator Has Too Many Buttons",
+      "date": "August 31, 2026",
+      "readTime": "6 min read",
+      "icon": "🧮",
+      "paragraphs": [
+        "I counted the buttons on my calculator.",
+        "Then I forgot the number.",
+        "I counted them again.",
+        "This process has changed nothing about my life."
+      ],
+      "buttonText": "♥ COMPUTE"
+    },
+    {
+      "id": 11,
+      "category": "Fashion",
+      "title": "New Study Finds Hats Make You 73% More Hat-Like",
+      "date": "August 28, 2026",
+      "readTime": "9 min read",
+      "icon": "🎩",
+      "paragraphs": [
+        "The findings are difficult to argue with.",
+        "Participants wearing hats were noticeably more likely to be wearing hats.",
+        "Researchers described the results as \"pretty obvious.\""
+      ],
+      "buttonText": "♥ FANCY"
+    },
+    {
+      "id": 12,
+      "category": "Philosophy",
+      "title": "Is a Hot Dog a Sandwich? We Refuse to Answer",
+      "date": "August 24, 2026",
+      "readTime": "13 min read",
+      "icon": "🌭",
+      "paragraphs": [
+        "After extensive consideration, our editorial team has decided that this question is somebody else's problem.",
+        "We have therefore written 900 words about refusing to write the answer.",
+        "You're welcome."
+      ],
+      "buttonText": "♥ NO COMMENT"
+    },
+    {
+      "id": 13,
+      "category": "Breaking News",
+      "title": "Man Opens Refrigerator, Finds Exactly What He Expected",
+      "date": "August 20, 2026",
+      "readTime": "2 min read",
+      "icon": "🧊",
+      "paragraphs": [
+        "In a surprising development, a refrigerator contained the same objects it contained approximately ten minutes earlier.",
+        "\"I was surprised,\" said Greg, despite having put the food there himself."
+      ],
+      "buttonText": "♥ SHOCKING"
+    },
+    {
+      "id": 14,
+      "category": "Investigation",
+      "title": "Where Do Single Socks Go When They Escape the Dryer?",
+      "date": "August 17, 2026",
+      "readTime": "5 min read",
+      "icon": "🧦",
+      "paragraphs": [
+        "I put eight pairs of socks into the laundry. I retrieved seven pairs and one blue striped sock with no remaining purpose.",
+        "My prevailing theory is that missing socks pass through a temporary wormhole into another dimension where they lead fulfilling lives.",
+        "I respect their independence, but I still want my left sock back."
+      ],
+      "buttonText": "♥ RECOVERY MISSION"
+    },
+    {
+      "id": 15,
+      "category": "Fitness",
+      "title": "I Stared at a Treadmill for 20 Minutes and Feel Exhausted",
+      "date": "August 14, 2026",
+      "readTime": "4 min read",
+      "icon": "🏃",
+      "paragraphs": [
+        "Gym experts tell us that consistency is key. Today I stood in front of a running treadmill for twenty full minutes.",
+        "Mental effort counts for at least 80% of cardio, according to zero legitimate doctors.",
+        "I rewarded myself with a smoothie and a nap."
+      ],
+      "buttonText": "♥ ATHLETIC"
+    },
+    {
+      "id": 16,
+      "category": "Technology",
+      "title": "Why Does Microwave Minute Feel Twice as Long as Regular Minute?",
+      "date": "August 10, 2026",
+      "readTime": "6 min read",
+      "icon": "⏱️",
+      "paragraphs": [
+        "Standard physics states time is linear and constant. Anyone reheating leftover soup knows this is a lie.",
+        "Sixty seconds on a microwave clock actually lasts approximately 4.5 standard human minutes.",
+        "Albert Einstein failed to account for waiting for hot cheese."
+      ],
+      "buttonText": "♥ TIME DILATION"
+    },
+    {
+      "id": 17,
+      "category": "Architecture",
+      "title": "I Stared at Stairs Until I Forgot How Walking Works",
+      "date": "August 7, 2026",
+      "readTime": "3 min read",
+      "icon": "🪜",
+      "paragraphs": [
+        "Stairs are just concrete shelves we step on to go upwards.",
+        "Once you realize this mid-step, your brain stops trusting your knees. I had to sit down on step 4 for ten minutes.",
+        "Elevators are clearly the superior lifestyle choice."
+      ],
+      "buttonText": "♥ VERTIGO"
+    },
+    {
+      "id": 18,
+      "category": "Nature",
+      "title": "Ducks Are suspiciously Calm in Cold Water",
+      "date": "August 3, 2026",
+      "readTime": "5 min read",
+      "icon": "🦆",
+      "paragraphs": [
+        "I visited the local pond yesterday while wearing three sweaters. The ducks were floating calmly in freezing water.",
+        "No shivering, no complaints, no hot cocoa in sight.",
+        "What are ducks hiding from us?"
+      ],
+      "buttonText": "♥ SUSPICIOUS"
+    },
+    {
+      "id": 19,
+      "category": "Art & Culture",
+      "title": "I Drew a Circle and It Turned Out Slightly Oval",
+      "date": "July 30, 2026",
+      "readTime": "7 min read",
+      "icon": "⭕",
+      "paragraphs": [
+        "Attempting perfection is a human flaw. Today I tried drawing a flawless circle freehand.",
+        "The result resembled an egg that was mildly offended.",
+        "I am framing it as abstract minimalism."
+      ],
+      "buttonText": "♥ ARTISTIC"
+    },
+    {
+      "id": 20,
+      "category": "Home Economics",
+      "title": "The Mystery of the Screws Left Over After Assembling Furniture",
+      "date": "July 26, 2026",
+      "readTime": "8 min read",
+      "icon": "🔧",
+      "paragraphs": [
+        "I built a bookshelf using clear pictorial instructions. The bookshelf stands straight and holds books.",
+        "Yet there are four silver screws and an Allen wrench lying on my rug.",
+        "Where did they belong? Does the bookshelf know? I am afraid to touch it."
+      ],
+      "buttonText": "♥ DANGEROUS"
+    },
+    {
+      "id": 21,
+      "category": "Weather",
+      "title": "It Rained for Three Minutes Just to Make Me Look Foolish",
+      "date": "July 22, 2026",
+      "readTime": "2 min read",
+      "icon": "🌧️",
+      "paragraphs": [
+        "I opened my umbrella, took three strides onto the sidewalk, and the sun immediately broke through the clouds.",
+        "The sky is mocking my weather app.",
+        "I carried the umbrella open for the rest of my walk to maintain authority."
+      ],
+      "buttonText": "♥ METEOROLOGY"
+    },
+    {
+      "id": 22,
+      "category": "Gaming",
+      "title": "I Played Tic-Tac-Toe Against Myself and Lost",
+      "date": "July 18, 2026",
+      "readTime": "4 min read",
+      "icon": "❌⭕",
+      "paragraphs": [
+        "To test my tactical foresight, I played a friendly match of Tic-Tac-Toe against my left hand.",
+        "My right hand made a critical tactical blunder on turn three.",
+        "My left hand celebrated with a quiet fist bump."
+      ],
+      "buttonText": "♥ TACTICAL"
+    },
+    {
+      "id": 23,
+      "category": "Mystery",
+      "title": "Who Is Pressing the Doorbell in My Dreams?",
+      "date": "July 15, 2026",
+      "readTime": "6 min read",
+      "icon": "🔔",
+      "paragraphs": [
+        "At 6:00 AM I woke up to a loud ding-dong chime ringing clearly in my mind.",
+        "I ran to the front door in my pajamas. Nobody was there except a squirrel looking nonchalant.",
+        "I am placing the squirrel on my suspect board."
+      ],
+      "buttonText": "♥ INVESTIGATE"
+    },
+    {
+      "id": 24,
+      "category": "Culinary",
+      "title": "I Tried Toasting Bread Twice and Created Charcoal",
+      "date": "July 11, 2026",
+      "readTime": "5 min read",
+      "icon": "🍞",
+      "paragraphs": [
+        "Setting 3 was too soft. Setting 4 was acceptable. I wondered what Setting 6 would achieve.",
+        "My smoke alarm provided the definitive answer.",
+        "My kitchen smelled like a campfire for two days."
+      ],
+      "buttonText": "♥ CRISPY"
+    },
+    {
+      "id": 25,
+      "category": "Music",
+      "title": "An Elevator Jingle Has Been Stuck in My Head Since Tuesday",
+      "date": "July 8, 2026",
+      "readTime": "9 min read",
+      "icon": "🎼",
+      "paragraphs": [
+        "Three smooth synth notes played while descending to the ground floor. They have played continuously in my brain ever since.",
+        "I tried humming Beethoven to override it. Beethoven lost.",
+        "This elevator needs a record deal."
+      ],
+      "buttonText": "♥ CATCHY"
+    },
+    {
+      "id": 26,
+      "category": "Botany",
+      "title": "Dandelions Are Just Weeds With Great Public Relations",
+      "date": "July 4, 2026",
+      "readTime": "4 min read",
+      "icon": "🌼",
+      "paragraphs": [
+        "If a plant grows uninvited in your lawn, it is a weed. But if you blow on it and make a wish, suddenly it is magic?",
+        "The branding team behind dandelions deserves a promotion.",
+        "My lawn is full of magical trespassers."
+      ],
+      "buttonText": "♥ MAKE A WISH"
+    },
+    {
+      "id": 27,
+      "category": "Psychology",
+      "title": "Why Do We Wiggle Our Keys to Make Them Work Better?",
+      "date": "June 30, 2026",
+      "readTime": "6 min read",
+      "icon": "🔑",
+      "paragraphs": [
+        "My front door key refused to turn. I wiggled it gently, pulled it back 1 millimeter, and blew air into the keyhole.",
+        "It opened immediately.",
+        "Locks demand a ritual before granting passage."
+      ],
+      "buttonText": "♥ IT WORKS"
+    },
+    {
+      "id": 28,
+      "category": "Finance",
+      "title": "I Found a Nickel on the Sidewalk and Felt Rich",
+      "date": "June 26, 2026",
+      "readTime": "3 min read",
+      "icon": "🪙",
+      "paragraphs": [
+        "Five whole cents lying upside down near the curb. Free money from the universe.",
+        "I picked it up, wiped off the dirt, and felt like a successful treasure hunter.",
+        "My net worth increased by 0.002% instantly."
+      ],
+      "buttonText": "♥ PROFIT"
+    },
+    {
+      "id": 29,
+      "category": "Literature",
+      "title": "I Read the Back of a Cereal Box and Was Moved to Tears",
+      "date": "June 22, 2026",
+      "readTime": "7 min read",
+      "icon": "🥣",
+      "paragraphs": [
+        "The maze on the back was complex yet achievable. The word search held profound truths.",
+        "Who wrote this masterpiece? Why haven't they won a Pulitzer Prize?",
+        "Breakfast literature is heavily underrated."
+      ],
+      "buttonText": "♥ DEEP"
+    },
+    {
+      "id": 30,
+      "category": "Design",
+      "title": "Push vs Pull Doors: A Daily Human Struggle",
+      "date": "June 18, 2026",
+      "readTime": "5 min read",
+      "icon": "🚪",
+      "paragraphs": [
+        "I walked up to a glass door with a handleset. I pushed forcefully. Nothing moved.",
+        "A small sign said 'PULL'. I pulled. It opened effortlessly.",
+        "I pretended I was just testing the structural integrity of the frame."
+      ],
+      "buttonText": "♥ EMBARRASSING"
+    },
+    {
+      "id": 31,
+      "category": "Travel",
+      "title": "I Packed Three Extra Pairs of Pants Just in Case",
+      "date": "June 14, 2026",
+      "readTime": "4 min read",
+      "icon": "🧳",
+      "paragraphs": [
+        "I went on a two-day weekend trip to a town 30 miles away.",
+        "My luggage contained six shirts, five pairs of pants, and two raincoats. What did I anticipate? Spontaneous swamp survival?",
+        "I wore one pair of jeans the entire weekend."
+      ],
+      "buttonText": "♥ PREPARED"
+    },
+    {
+      "id": 32,
+      "category": "Astronomy",
+      "title": "The Moon Was Out During the Day and It Felt Illegal",
+      "date": "June 10, 2026",
+      "readTime": "6 min read",
+      "icon": "🌙☀️",
+      "paragraphs": [
+        "At 2:00 PM on a bright Thursday, I glanced up and saw the moon floating casually alongside the sun.",
+        "Who allowed this schedule overlap? Does the sun know?",
+        "Celestial management needs to check their calendar."
+      ],
+      "buttonText": "♥ OVERTIME"
+    },
+    {
+      "id": 33,
+      "category": "Philosophy",
+      "title": "If a Tree Falls in a Forest, Does It Make a Blog Post?",
+      "date": "June 6, 2026",
+      "readTime": "10 min read",
+      "icon": "🌲",
+      "paragraphs": [
+        "In conclusion, after writing 33 articles about spoons, pigeons, shoes, and cereal boxes, one ultimate truth emerges.",
+        "Everything is a potential blog post if you stare at it long enough.",
+        "Thank you for reading my extremely real thoughts."
+      ],
+      "buttonText": "♥ ULTIMATE TRUTH"
+    }
+  ]
+}
